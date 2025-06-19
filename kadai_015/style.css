@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  font-family: sans-serif; /* 総称フォント */
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 1.2em; /* 文字サイズに対して1.2倍に調整 */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 影：位置と色は自由 */
   border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
@@ -31,3 +31,4 @@ h1 {
 #basic p {
   font-weight: bold;
 }
+
