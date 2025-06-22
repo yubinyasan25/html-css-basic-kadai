@@ -1,0 +1,80 @@
+body,
+article p,
+article a {
+  font-size: 20px;
+}
+h1,
+p {
+  margin: 0;
+}
+header {
+  margin-bottom: 20px;             /* 下の余白を20pxに */
+  background-color: rgb(244, 79, 79); /* 背景色を指定 */
+  text-align: center;              /* 中の要素を中央揃えに */
+}
+header h1 {
+  color: rgb(255, 255, 255);       /* h1の文字色を白に */
+}
+main {
+  padding: 10px;
+}
+#parent {
+  display: flex;
+  justify-content: space-between;
+}
+.contents {
+  border: 3px solid rgb(238, 204, 204);  /* 線：太さ3px、実線、色指定 */
+  flex-basis: 25%;                      /* 親要素の幅の25%を指定 */
+  padding: 10px 15px;                   /* 内側の余白：上下10px、左右15px */
+  margin: 20px 0;                       /* 外側の余白：上下20px、左右0 */
+  text-align: center;                   /* 中の要素を中央揃えに */
+}
+h2 {
+  font-size: 25px; /* フォントサイズを25pxに */
+  border-bottom: 3px dotted rgb(236, 122, 122); /* 下線：3pxの点線、指定色 */
+  position: relative; /* 疑似要素を配置するために必要 */
+  padding-left: 1.2em; /* 「●」のスペースを確保 */
+}
+
+h2::before {
+  content: "●"; /* 「●」を表示 */
+  color: rgb(239, 111, 139); /* 色を指定 */
+  position: absolute;
+  left: 0;
+}
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+.contents img {
+  margin: 10px 0;  /* 上下10px、左右0の余白 */
+  width: 70%;      /* 幅を70%に指定 */
+}
+footer {
+  background-color: rgb(244, 79, 79); /* 背景色を指定 */
+  text-align: center;                /* 中の要素を中央揃えに */
+}
+a {
+  color: rgb(255, 255, 255); /* 通常時の文字色 */
+}
+
+a:visited {
+  color: rgb(193, 234, 251); /* 訪問済みリンクの文字色 */
+}
+
+a:hover {
+  color: rgb(245, 178, 168); /* ホバー時の文字色 */
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  #parent {
+    flex-direction: column; /* 要素を縦に並べる */
+  }
+}
