@@ -2,8 +2,10 @@
   width: 800px;
   background-color: #dcc9f4;
   margin: 20px auto; /* 上下に20pxの余白、中央配置 */
+  margin-right: auto;
   text-align: center; /* p要素内のテキストを中央揃え */
   display: flex;
+  gap: 0px;
   justify-content: center; /* p要素を横並びに配置 */
   align-items: center;
   padding: 10px 0; /* 上下の内側余白を少し追加（任意） */
@@ -13,7 +15,7 @@
 .top-child {
   width: 20%;
   background-color: #ffd9df;
-  margin: 10px; /* 不要なマージンをリセット */
+  margin: 0 5px 0 0; /* 不要なマージンをリセット */
 }
 
 /* 中央のdiv（middle）への装飾 */
