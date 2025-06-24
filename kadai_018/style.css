@@ -4,7 +4,7 @@
   margin: 20px auto; /* 上下に20pxの余白、中央配置 */
   text-align: center; /* p要素内のテキストを中央揃え */
   display: flex;
-  justify-content: space-between; /* p要素を横並びに配置 */
+  justify-content: center; /* p要素を横並びに配置 */
   align-items: center;
   padding: 10px 0; /* 上下の内側余白を少し追加（任意） */
 }
@@ -13,7 +13,7 @@
 .top-child {
   width: 20%;
   background-color: #ffd9df;
-  margin: 0; /* 不要なマージンをリセット */
+  margin: 10px; /* 不要なマージンをリセット */
 }
 
 /* 中央のdiv（middle）への装飾 */
@@ -87,17 +87,13 @@
   width: 400px;
   height: 100px;
   background-color: #e5dcf0;
-  position: absolute;        /* bottomを基準に絶対配置 */
-  left: 50%;                 /* 中央に寄せるために左端を50%に */
-  transform: translateX(-50%); /* 要素の幅の半分だけ左にずらして中央揃え */
 }
-#bottom-child01,
-#bottom-child02,
+#bottom-child02 {
+ position: relative;
+ left: 200px;
+}
+
 #bottom-child03 {
-  width: 400px;
-  height: 100px;
-  background-color: #e5dcf0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+ position: relative;
+ left: 400px
 }
